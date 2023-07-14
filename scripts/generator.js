@@ -15,6 +15,7 @@ function generate(){
     var race="";
     var background="";
     var element="";
+    var clas="";
     number = random10();
     if(number<=1){gender="Male";}
     else if(number<=5){gender="Female";}
@@ -44,10 +45,11 @@ function generate(){
     }
     background=backgrounds[random10()][random10()];
     element=elements[random10()][random10()];
-    display(gender,type,hybrid,race,background,element);
+    clas=classes[random10()][random10()];
+    display(gender,type,hybrid,race,background,element,clas);
 
 }
-function display(gender,type,hybrid,race,background,element){
+function display(gender,type,hybrid,race,background,element,clas){
     const holder = document.getElementById("holder");
-    holder.innerHTML=`You are a ${gender}, who ${type}.\n Your character is a ${hybrid} ${race}, with a background of being a ${background} who wields the element of ${element}.`;
+    holder.innerHTML=`You are a ${gender}, who ${type}.\n Your character is a ${hybrid} ${race} ${clas}, with a background of being a ${background} who wields the element of ${element}.`;
 }
