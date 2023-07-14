@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+header,footer{
+    display: flex;
+    background-color: #183E4E;
+    color: white;
+}
+h1{
+    width: 100%;
+    text-align: center; 
+}
+footer p{
+    width: 100%;
+    text-align: center; 
+}
+button{
+    margin: 10px;
+    width: 20%;
+    align-self: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+a{
+    text-decoration: underline;
+    color: white;
+}
